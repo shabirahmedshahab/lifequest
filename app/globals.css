@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0e0b1a;
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(124, 92, 255, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(232, 182, 75, 0.08), transparent 40%);
+  color: #f1e6c8;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Cinzel", serif;
+}
+
+:focus-visible {
+  outline: 2px solid #e8b64b;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #171226;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a2e56;
+  border-radius: 6px;
+}
+
+.xp-bar-shimmer {
+  background: linear-gradient(
+    90deg,
+    #e8b64b 0%,
+    #fff2c9 50%,
+    #e8b64b 100%
+  );
+  background-size: 200% 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
